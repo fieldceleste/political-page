@@ -12,39 +12,58 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h1>The Political Meter Game</h1>
+      <h1>The Political Quiz</h1>
       <h3>Answer these questions to see which political party you are!</h3>
     </div>
-    <form id="question1">
-      <label for="climate">How do you feel about climate chnage?</label>
-      <select id="climate" type="text">
-        <option value="climate1">All for helping the planet</option>
-        <option value="climate2">Care, but to an extent</option>
-        <option value="climate3">Not that important to me</option>
-      </select>
 
-      <form id="question2">
-        <label for="gun">How do you feel about gun control?</label>
-        <select id="gun" type="text">
-          <option value="gun1">Needs to happen, including assult weapons</option>
-          <option value="gun2">Want to limit, but not take away</option>
-          <option value="gun3">Do not touch my guns!</option>
+    <!-- //form-- -->
+
+    <!--Question 1-->
+    <form id="questions">
+
+
+      <label for="climate">How do you feel about climate change?</label>
+
+      <div id="climate-options">
+        <select id="climate" type="text">
+          <option value="1">All for helping the planet</option>
+          <option value="2">Care, but to an extent</option>
+          <option value="3">Not that important to me</option>
         </select>
+      </div>
 
-        <form id="question3">
-          <label for="immigration">How do you feel about immigration?</label>
-          <select id="immigration" type="text">
-            <option value="immigration1">Everyones welcome, open borders!</option>
-            <option value="immigration2">Care about, but not open borders</option>
-            <option value="immigration3">We need to secure our borders</option>
-          </select>
+      <!--Question 2-->
 
-          <button type="submit" class="btn btn-warning">Which Celebrity?</button>
-        </form>
+      <label for="gun">How do you feel about gun control?</label>
 
-        <div id="result">
-          <p>Your politcial party is<span id="party"></span></p>
-        </div>
+      <div id="gun-options">
+        <select id="gun" type="text">
+          <option value="1">Needs to happen, including assult weapons</option>
+          <option value="2">Want to limit, but not take away</option>
+          <option value="3">Do not touch my guns!</option>
+        </select>
+      </div>
+
+      <!--Question 3-->
+
+      <label for="immigration">How do you feel about immigration?</label>
+
+      <div id="immigration-options">
+        <select id="immigration" type="text">
+          <option value="1">Everyones welcome, open borders!</option>
+          <option value="2">Care about, but not open borders</option>
+          <option value="3">We need to secure our borders</option>
+        </select>
+      </div>
+
+      <!--Result-->
+      <br>
+      <button type="submit" class="btn btn-warning">Which Political Party?</button>
+      </br>
+    </form>
+
+    <p>Your political party is <span id="result">__</p>
+           
   </div>
 </body>
 

@@ -1587,7 +1587,7 @@ pre code {
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
-  background-color: paleturquoise;
+  background-color: rgb(227, 228, 228);
 }
 @media (min-width: 768px) {
   .container {
